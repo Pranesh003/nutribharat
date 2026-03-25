@@ -1,0 +1,53 @@
+:root {
+  /* Soft Color Palette - Indian Context */
+  --color-primary: #5D9C59; /* Fresh Green (Vegetarian/Nature) - Softened */
+  --color-primary-dark: #3F6F3C;
+  --color-primary-light: #E8F5E9; /* Very light green background */
+  
+  --color-secondary: #DF7861; /* Soft Saffron/Clay - Muted Orange */
+  --color-accent: #ECB390; /* Warm Beige/Wheat */
+  
+  --color-background: #FDFCF8; /* Warm Off-white, like parchment or raw silk */
+  --color-surface: #FFFFFF;
+  --color-surface-hover: #F9FAFB;
+  
+  --color-text-main: #1F2937; /* Soft Black */
+  --color-text-muted: #6B7280; /* Gray 500 */
+  --color-text-light: #9CA3AF;
+  
+  --color-success: #10B981;
+  --color-warning: #F59E0B;
+  --color-error: #EF4444;
+
+  /* Typography */
+  --font-sans: 'Inter', system-ui, -apple-system, sans-serif;
+  --font-heading: 'Inter', sans-serif; /* Could be a serif for more "premium" feel if requested, but Inter is safe */
+  
+  /* Spacing */
+  --spacing-xs: 0.25rem;
+  --spacing-sm: 0.5rem;
+  --spacing-md: 1rem;
+  --spacing-lg: 1.5rem;
+  --spacing-xl: 2rem;
+  --spacing-2xl: 3rem;
+  --spacing-3xl: 4rem;
+  
+  /* Radius */
+  --radius-sm: 0.375rem;
+  --radius-md: 0.75rem; /* slightly rounder for modern feel */
+  --radius-lg: 1rem;
+  --radius-xl: 1.5rem;
+  --radius-full: 9999px;
+  
+  /* Shadows - Premium Soft Shadows */
+  --shadow-sm: 0 1px 2px 0 rgb(0 0 0 / 0.05);
+  --shadow-md: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -1px rgb(0 0 0 / 0.06);
+  --shadow-lg: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -2px rgb(0 0 0 / 0.05);
+  --shadow-xl: 0 20px 25px -5px rgb(0 0 0 / 0.1), 0 10px 10px -5px rgb(0 0 0 / 0.04);
+  --shadow-soft: 0 8px 30px rgba(0, 0, 0, 0.04);
+  
+  /* Transitions */
+  --transition-fast: 0.15s ease;
+  --transition-normal: 0.3s ease;
+  --transition-slow: 0.5s ease;
+}

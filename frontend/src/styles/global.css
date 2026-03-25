@@ -1,0 +1,156 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&display=swap');
+
+:root {
+    /* Cyber-Health Palette */
+    --color-bg-dark: #0a0a0f;
+    --color-bg-card: rgba(255, 255, 255, 0.03);
+    --color-bg-card-hover: rgba(255, 255, 255, 0.07);
+
+    --color-neon-primary: #00ff9d;
+    /* Cyber Green */
+    --color-neon-secondary: #00d2ff;
+    /* Cyber Blue */
+    --color-neon-accent: #bd00ff;
+    /* Cyber Purple */
+    --color-neon-danger: #ff0055;
+
+    --color-primary: var(--color-neon-primary);
+    --color-secondary: var(--color-neon-secondary);
+
+    --color-text-main: #ffffff;
+    --color-text-muted: #a1a1aa;
+
+    --glass-border: 1px solid rgba(255, 255, 255, 0.08);
+    --glass-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+
+    --font-sans: 'Outfit', sans-serif;
+
+    --spacing-xs: 0.5rem;
+    --spacing-sm: 1rem;
+    --spacing-md: 1.5rem;
+    --spacing-lg: 2rem;
+
+    --radius-sm: 8px;
+    --radius-md: 16px;
+    --radius-lg: 24px;
+}
+
+body {
+    margin: 0;
+    font-family: var(--font-sans);
+    background: radial-gradient(circle at 50% -20%, #1a1a2e, var(--color-bg-dark));
+    background-size: 100% 100vh;
+    background-attachment: fixed;
+    color: var(--color-text-main);
+    line-height: 1.6;
+    min-height: 100vh;
+}
+
+/* Glassmorphism Utilities */
+.glass-panel {
+    background: var(--color-bg-card);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border: var(--glass-border);
+    box-shadow: var(--glass-shadow);
+    border-radius: var(--radius-md);
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.glass-panel:hover {
+    background: var(--color-bg-card-hover);
+    border-color: rgba(255, 255, 255, 0.15);
+    transform: translateY(-2px);
+    box-shadow: 0 12px 40px 0 rgba(0, 0, 0, 0.5);
+}
+
+/* Typography */
+h1,
+h2,
+h3,
+h4 {
+    margin: 0;
+    font-weight: 700;
+    letter-spacing: -0.02em;
+}
+
+h1 {
+    font-size: 2.5rem;
+    background: linear-gradient(to right, #fff, #a5a5a5);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+h2 {
+    font-size: 2rem;
+}
+
+p {
+    color: var(--color-text-muted);
+}
+
+/* Layout Utilities */
+.container {
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 2rem;
+}
+
+.grid-bento {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-auto-rows: minmax(100px, auto);
+    gap: 1.5rem;
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 768px) {
+    .grid-bento {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .container {
+        padding: 1rem;
+    }
+
+    h1 {
+        font-size: 1.8rem;
+    }
+}
+
+/* Animations */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.animate-fade-in {
+    animation: fadeIn 0.6s ease-out forwards;
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background: var(--color-bg-dark);
+}
+
+::-webkit-scrollbar-thumb {
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: rgba(255, 255, 255, 0.2);
+}
