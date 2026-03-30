@@ -5,6 +5,7 @@ const BentoCard = ({ children, className = '', colSpan = 1, rowSpan = 1, title, 
     // for this raw implementation, we'll use inline style gridColumn/gridRow if provided, 
     // or rely on utility classes if Tailwind was present. Since we use vanilla CSS, we'll use style props.
 
+    
     const style = {
         gridColumn: `span ${colSpan}`,
         gridRow: `span ${rowSpan}`,
