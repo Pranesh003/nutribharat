@@ -1,6 +1,7 @@
 import React, { useEffect } from 'react';
 import { useNotification } from '../../context/NotificationContext';
 
+
 const NotificationScheduler = () => {
     const { addToast } = useNotification();
 
