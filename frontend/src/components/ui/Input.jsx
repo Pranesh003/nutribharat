@@ -1,5 +1,6 @@
 import React from 'react';
 
+
 const Input = ({ label, id, type = 'text', ...props }) => {
     return (
         <div className="flex-col gap-sm" style={{ marginBottom: '1rem' }}>
