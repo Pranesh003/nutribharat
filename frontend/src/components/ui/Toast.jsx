@@ -23,6 +23,7 @@ const Toast = ({ message, type = 'info', onClose }) => {
         warning: <AlertCircle size={20} color="white" />
     };
 
+    
     return (
         <div className="hover-lift" style={{
             display: 'flex',
