@@ -2,7 +2,6 @@ import React, { createContext, useContext, useState, useCallback } from 'react';
 import Toast from '../components/ui/Toast';
 
 const NotificationContext = createContext();
-
 export const useNotification = () => useContext(NotificationContext);
 
 export const NotificationProvider = ({ children }) => {
