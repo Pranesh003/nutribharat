@@ -101,6 +101,7 @@ const Dashboard = () => {
         }
     };
 
+    
     const handleDownload = () => {
         try {
             generateDailyReport(user, selectedDate, mealPlan, logs, steps);
