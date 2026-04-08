@@ -40,4 +40,5 @@ export const NotificationProvider = ({ children }) => {
             </div>
         </NotificationContext.Provider>
     );
+    
 };
