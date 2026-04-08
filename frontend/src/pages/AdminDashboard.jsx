@@ -20,6 +20,7 @@ const AdminDashboard = () => {
         fetchUsers();
     }, []);
 
+    
     return (
         <div className="container animate-fade-in" style={{ padding: '2rem' }}>
             <div className="flex justify-between items-center" style={{ marginBottom: '2rem' }}>
