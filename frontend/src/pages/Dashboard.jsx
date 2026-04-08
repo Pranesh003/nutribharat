@@ -56,7 +56,7 @@ const Dashboard = () => {
         } catch (e) {
             console.error("Failed to save swap", e);
         }
-    };
+    }; 
 
     const handleLog = async (mealType, status) => {
         setLogs(prev => ({ ...prev, [mealType]: status }));
