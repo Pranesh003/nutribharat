@@ -48,4 +48,5 @@ const DailyLog = sequelize.define('DailyLog', {
     ]
 });
 
+
 module.exports = DailyLog;
